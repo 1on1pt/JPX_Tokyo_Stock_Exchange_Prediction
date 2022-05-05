@@ -1,7 +1,7 @@
 # JPX_Tokyo_Stock_Exchange_Prediction
 
 ## Communication Protocols
-* Slack "group-project-channel
+* Slack "group-project-channel"
 * Zoom
 * E-mail
 
