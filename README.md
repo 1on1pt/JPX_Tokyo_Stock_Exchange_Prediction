@@ -4,13 +4,42 @@
 
 
 
-## Communication Protocols
-* Slack "group-project-channel"
-* Zoom
-* E-mail
+## Presentation
+### Selected Topic
 
-## Individual Branches
+### Reason for Selected Topic
 
-### One Branch for Each Team Member
 
-#### Each Team Member has at least 4 commits from the duration of the first segment
+### Description of Source of Data
+
+
+### Questions to Answer with Data
+
+
+## GitHub
+### Main Branch
+* Includes README.md
+
+### README.md Must Include
+* Description of communication protocol
+
+### Individual Branches
+* At least one branch for each team member
+* Each team member has at least four commits from the duration of first segment
+
+## Machine Learning
+
+
+
+
+## Database
+
+
+
+
+## Dashboard
+* N/A this week
+
+
+
+
