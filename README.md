@@ -75,12 +75,12 @@ The following are the provisional ERDs:
 
 * **stock_option & financials**
 
-#### Showing the Relationship
+#### <u>Showing the Relationship</u>
 
 ![ERD_stockoptions_financials_short](https://user-images.githubusercontent.com/94148420/167268666-08f5a6fc-c079-462c-ad25-7ca8e069e920.PNG)
 
 
-#### The Complete Tables
+#### <u>The Complete Tables</u>
 
 ![ERD_stockoptions_financials_long](https://user-images.githubusercontent.com/94148420/167268663-f20238b7-126a-42ba-a843-e8c3c5af5b4f.PNG)
 
