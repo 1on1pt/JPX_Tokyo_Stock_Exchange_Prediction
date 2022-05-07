@@ -26,10 +26,18 @@ This dataset contains historic data for a variety of Japanese stocks and options
 
 ### README.md Must Include
 * Description of communication protocol
+    * Via Slack on the **group-project-channel*
+    * Via Slack with **direct messaging**
+    * Use of **email**
+    * Use of **Zoom** meetings as necessary
+    * During **Zoom in-class sessions**
 
 ### Individual Branches
 * At least one branch for each team member
+    * Each team member will will add their own branch to the respository
+
 * Each team member has at least four commits from the duration of first segment
+    * To be tracked throughout the duration of this project
 
 ## Machine Learning
 
