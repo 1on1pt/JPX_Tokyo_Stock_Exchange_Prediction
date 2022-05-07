@@ -59,7 +59,7 @@ This database contains five tables:
    * Primary Key = date_code (character varying)
 
 4. financials
-   * Priimary Key = disclosure_num (integer)
+   * Primary Key = disclosure_num (integer)
    * Foriegn Key = date_code (character varying)
 
 5. trades
