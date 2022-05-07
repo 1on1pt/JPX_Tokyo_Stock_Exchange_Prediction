@@ -47,7 +47,7 @@ This dataset contains historic data for a variety of Japanese stocks and options
 ## Database
 A **provisional database** has been developed using PostgreSQL 11 within the pgAdmin 4 environment.
 
-This database contains five tables
+This database contains five tables:
 1. stock_list
    * Primary Key = securities_code (integer)
 
