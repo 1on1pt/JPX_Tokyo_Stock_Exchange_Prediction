@@ -26,7 +26,7 @@ This dataset contains historic data for a variety of Japanese stocks and options
 
 ### README.md Must Include
 * Description of communication protocol
-    * Via Slack on the **group-project-channel*
+    * Via Slack on the **group-project-channel**
     * Via Slack with **direct messaging**
     * Use of **email**
     * Use of **Zoom** meetings as necessary
