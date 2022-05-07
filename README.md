@@ -68,6 +68,17 @@ This database contains five tables:
 
 ### Entity Relationship Diagrams (ERDs)
 The following are the provisional ERDs:
+* **stock_list & stock_price**
+
+![ERD_stocklist_stockprice](https://user-images.githubusercontent.com/94148420/167268629-a31c1dae-83c0-49d2-b0dc-522efff9f691.PNG)
+
+
+* **stock_option & financials**
+
+![ERD_stockoptions_financials_long](https://user-images.githubusercontent.com/94148420/167268663-f20238b7-126a-42ba-a843-e8c3c5af5b4f.PNG)
+
+
+![ERD_stockoptions_financials_short](https://user-images.githubusercontent.com/94148420/167268666-08f5a6fc-c079-462c-ad25-7ca8e069e920.PNG)
 
 
 
