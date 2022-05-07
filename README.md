@@ -34,7 +34,7 @@ This dataset contains historic data for a variety of Japanese stocks and options
 
 ### Individual Branches
 * At least one branch for each team member
-    * Each team member will will add their own branch to the respository
+    * Each team member will add their own branch to the respository
 
 * Each team member has at least four commits from the duration of first segment
     * To be tracked throughout the duration of this project
