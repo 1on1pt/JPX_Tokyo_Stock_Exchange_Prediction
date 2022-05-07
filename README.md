@@ -75,7 +75,7 @@ The following are the provisional ERDs:
 
 * **stock_option & financials**
 
-__Showing the Relationship__
+<ul>Showing the Relationship</ul>
 
 ![ERD_stockoptions_financials_short](https://user-images.githubusercontent.com/94148420/167268666-08f5a6fc-c079-462c-ad25-7ca8e069e920.PNG)
 
