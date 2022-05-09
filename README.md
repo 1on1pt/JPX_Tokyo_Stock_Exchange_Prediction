@@ -95,12 +95,6 @@ The following are the provisional ERDs:
 
 ![ERD_stockoptions_financials_long](https://user-images.githubusercontent.com/94148420/167268663-f20238b7-126a-42ba-a843-e8c3c5af5b4f.PNG)
 
-### Sample Data that Mimics the Expected Final Database Structure or Schema
-
-
-
-### Draft Machine Learning Model is Connected to the Provisional Database
-
 
 
 ## Dashboard
