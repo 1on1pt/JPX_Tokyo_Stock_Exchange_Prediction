@@ -40,8 +40,8 @@ This dataset contains historic data for a variety of Japanese stocks and options
     * To be tracked throughout the duration of this project
 
 ## Machine Learning
-
-
+Three different models will be used to make TSE stock predictions.
+1.	Stacked LSTM – Built upon the original long short-term memory model or LSTM model, the Stacked LSTM has multiple hidden LSTM layers and each layer contains multiple memory cells.  An LSTM layer creates a sequence output rather than a single output value.  Hence, for every input time step there is an output time.  This makes it ideal for making time-based stock market predictions. A Stacked LSTM model will be created using the Keras Python deep learning library.   
 
 
 ## Database
