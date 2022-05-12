@@ -18,7 +18,7 @@
 **Although Team Members had a *Primary Role*, each contributed to all aspects of this final project.**
                                                                         
 
-## Selected Topic - Analysis of Stock Performance in the Tokyo Stock Exchange
+## Selected Topic - Analysis of Stock Performance
 Using machine learning models to predict the performance of stocks from the JPX Tokyo Stock Exchange and rank the stocks from highest to lowest expected returns.  
 
 ## Reason for Selected Topic
