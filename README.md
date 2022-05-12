@@ -11,7 +11,7 @@
 |**Aslesha Vangareddy**    |Dashboard                |Manage the development of the dashboard               |
 |**[Jerri Lyn Morales](https://github.com/jerrimor)**   |Database               |Manage the developement of the database          |
 |**[Carl Stewart](https://github.com/CarlS2rt)**       |Maching Learning Model |Manage the developement of the machine learning model|
-|**Eric Himburg**    |Machine Learning Model   |Manage the development of the machine learning model|
+|**[Eric Himburg](https://github.com/eric-himburg)**    |Machine Learning Model   |Manage the development of the machine learning model|
 |**Nate Millmann**   |Machine Learning Model   |Manage the development of the machine learning model |
 |**John Beauchamp**  |GitHub; Database   |Manage GitHub repository; assist with database development |
 
