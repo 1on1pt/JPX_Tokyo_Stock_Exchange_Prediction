@@ -2,8 +2,8 @@
 
 ![tokyo-stock-exchange](https://user-images.githubusercontent.com/94148420/166913015-6cb22041-0dd8-48f7-9b79-f8fef31ab4b9.jpg)
 
-University of Wisconsin Extension Campus Data Analytics Bootcamp Final Project
-**---------------------------------------------------------------------------------------------------------------------**
+### University of Wisconsin Extension Campus Data Analytics Bootcamp Final Project
+
 ### Team Members
 
 | **Member**         | **Primary Role**         | **Responsibilities**                                |
