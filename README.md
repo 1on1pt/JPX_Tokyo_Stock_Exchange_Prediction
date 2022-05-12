@@ -6,11 +6,16 @@ University of Wisconsin Extension Campus Data Analytics Bootcamp Final Project
 
 ### Team Members
 
-| **Member**         | **Role**              | **Responsibilities**                                |
-|--------------------|:---------------------:|-----------------------------------------------------|
-|**Aslesha Vangreddy** |Dashboard              |Manage the development of the dashboard              |
-|**Jerri Lyn Morales**   |Database               |Manage the developement of the database              |
+| **Member**         | **Primary Role**         | **Responsibilities**                                |
+|--------------------|:------------------------:|-----------------------------------------------------|
+|**Aslesha Vangreddy** |Dashboard              |Manage the development of the dashboard            |
+|**Jerri Lyn Morales**   |Database               |Manage the developement of the database          |
 |**Carl Stewart**       |Maching Learning Model |Manage the developement of the machine learning model|
+|**Eric Himburg**    |Machine Learning Model   |Manage the developmenet of the machine learning model|
+|**Nate Millmann**   |Machine Learning Model   |Manage the development of the machine learning model |
+|**John Beauchamp**  |GitHub; Database   |Manage GitHub repository; assist with database development |
+
+**Although Team Members had a *Primary Role*, each contributed in all aspects of this final project.**
                                                                         
 
 ## Presentation
