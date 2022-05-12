@@ -4,3 +4,7 @@ Approximatley four years of stock price data is downloaded, cleaned and then loa
  
 ![Actual closing price data of TSE Security 1301](screenshots/tse1301_actual.png)
 
+## Training the model
+A Stacked LSTM model using approximately 50,000 parameters is fitted on the data.  Below is a graph showing the actual stock data (blue) and the trained data used in the model (orange and green).  
+
+![Actual closing price data of TSE Security 1301](screenshots/tse1301_actual_model.png)
