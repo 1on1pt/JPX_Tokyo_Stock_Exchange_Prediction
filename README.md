@@ -8,7 +8,7 @@
 
 | **Member**            | **Primary Role**         | **Responsibilities**                                |
 |-------------------------|:------------------------:|-----------------------------------------------------|
-|**Aslesha Vangreddy**    |Dashboard                |Manage the development of the dashboard               |
+|**Aslesha Vangareddy**    |Dashboard                |Manage the development of the dashboard               |
 |**Jerri Lyn Morales**   |Database               |Manage the developement of the database          |
 |**Carl Stewart**       |Maching Learning Model |Manage the developement of the machine learning model|
 |**Eric Himburg**    |Machine Learning Model   |Manage the development of the machine learning model|
