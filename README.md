@@ -9,7 +9,7 @@
 | **Member**            | **Primary Role**         | **Responsibilities**                                |
 |-------------------------|:------------------------:|-----------------------------------------------------|
 |**Aslesha Vangareddy**    |Dashboard                |Manage the development of the dashboard               |
-|**Jerri Lyn Morales**   |Database               |Manage the developement of the database          |
+|**[Jerri Lyn Morales](https://github.com/jerrimor)**   |Database               |Manage the developement of the database          |
 |**[Carl Stewart](https://github.com/CarlS2rt)**       |Maching Learning Model |Manage the developement of the machine learning model|
 |**Eric Himburg**    |Machine Learning Model   |Manage the development of the machine learning model|
 |**Nate Millmann**   |Machine Learning Model   |Manage the development of the machine learning model |
