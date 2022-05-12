@@ -3,7 +3,7 @@
 ![tokyo-stock-exchange](https://user-images.githubusercontent.com/94148420/166913015-6cb22041-0dd8-48f7-9b79-f8fef31ab4b9.jpg)
 
 University of Wisconsin Extension Campus Data Analytics Bootcamp Final Project
-
+**---------------------------------------------------------------------------------------------------------------------**
 ### Team Members
 
 | **Member**         | **Primary Role**         | **Responsibilities**                                |
@@ -15,7 +15,7 @@ University of Wisconsin Extension Campus Data Analytics Bootcamp Final Project
 |**Nate Millmann**   |Machine Learning Model   |Manage the development of the machine learning model |
 |**John Beauchamp**  |GitHub; Database   |Manage GitHub repository; assist with database development |
 
-**Although Team Members had a *Primary Role*, each contributed in all aspects of this final project.**
+**Although Team Members had a *Primary Role*, each contributed to all aspects of this final project.**
                                                                         
 
 ## Presentation
