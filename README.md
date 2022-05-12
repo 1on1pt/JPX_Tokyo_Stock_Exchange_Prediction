@@ -7,8 +7,8 @@
 ### Team Members
 
 | **Member**            | **Primary Role**         | **Responsibilities**                                |
-|-----------------------|:------------------------:|-----------------------------------------------------|
-|**Aslesha Vangreddy**  |Dashboard              |Manage the development of the dashboard            |
+|-------------------------|:------------------------:|-----------------------------------------------------|
+|**Aslesha Vangreddy**    |Dashboard                |Manage the development of the dashboard               |
 |**Jerri Lyn Morales**   |Database               |Manage the developement of the database          |
 |**Carl Stewart**       |Maching Learning Model |Manage the developement of the machine learning model|
 |**Eric Himburg**    |Machine Learning Model   |Manage the developmenet of the machine learning model|
