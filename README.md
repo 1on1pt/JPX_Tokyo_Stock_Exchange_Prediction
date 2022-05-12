@@ -2,7 +2,18 @@
 
 ![tokyo-stock-exchange](https://user-images.githubusercontent.com/94148420/166913015-6cb22041-0dd8-48f7-9b79-f8fef31ab4b9.jpg)
 
+University of Wisconsin Extension Campus Data Analytics Bootcamp Final Project
 
+### Team Members
+
+| **Member**         | **Role**            | **Responsibilities**                      |
+|--------------------|:-------------------:|-------------------------------------------|
+|Aslesha Vangreddy   |Dashboard            |Manage the development of the dashboard    |
+|Jerri Lyn Morales   |Database             |Manage the developement of the database    |
+|Carl Stewart        |Maching Learning <br
+                            model/>        |Manage the developement of the machine <br
+                                                             learning model />          |
+                                                                        
 
 ## Presentation
 ### Selected Topic
