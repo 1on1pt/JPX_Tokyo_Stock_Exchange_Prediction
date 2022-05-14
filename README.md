@@ -2,10 +2,23 @@
 
 ![tokyo-stock-exchange](https://user-images.githubusercontent.com/94148420/166913015-6cb22041-0dd8-48f7-9b79-f8fef31ab4b9.jpg)
 
+##### University of Wisconsin Extension Campus Data Analytics Bootcamp Final Project
 
+### Team Members
 
-## Presentation
-### Selected Topic
+| **Member**            | **Primary Role**         | **Responsibilities**                                |
+|-------------------------|:------------------------:|-----------------------------------------------------|
+|**[Aslesha Vangareddy](https://github.com/AsleshaV)**    |Dashboard                |Manage the development of the dashboard               |
+|**[Jerri Morales](https://github.com/jerrimor)**   |Database               |Manage the developement of the database          |
+|**[Carl Stewart](https://github.com/CarlS2rt)**       |Maching Learning Model |Manage the developement of the machine learning model|
+|**[Eric Himburg](https://github.com/eric-himburg)**    |Machine Learning Model   |Manage the development of the machine learning model|
+|**[Nate Millmann](https://github.com/millmannnate)**   |Machine Learning Model   |Manage the development of the machine learning model |
+|**[John Beauchamp](https://github.com/1on1pt)**  |GitHub; Database   |Manage GitHub repository; assist with database development |
+
+**Although Team Members had a *Primary Role*, each contributed to all aspects of this final project.**
+                                                                        
+## Overview
+### Selected Topic - Analysis of Stock Performance
 Using machine learning models to predict the performance of stocks from the JPX Tokyo Stock Exchange and rank the stocks from highest to lowest expected returns.  
 
 ### Reason for Selected Topic
@@ -19,6 +32,8 @@ This dataset contains historic data for a variety of Japanese stocks and options
 2.	Which machine learning model makes the most accurate predictions of the stock market? 
 3.	Are hybrid machine learning models more accurate than one simple model?
 
+### Presentation
+The presentation is hosted on Google Slides and can be accessed [here](https://docs.google.com/presentation/d/1YIA2DkOoDofQbNiOO2Xbnr-BA07IlXciiKUgL-yjzWU/edit?usp=sharing).
 
 ## GitHub
 ### Main Branch
