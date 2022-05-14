@@ -2,10 +2,23 @@
 
 ![tokyo-stock-exchange](https://user-images.githubusercontent.com/94148420/166913015-6cb22041-0dd8-48f7-9b79-f8fef31ab4b9.jpg)
 
+##### University of Wisconsin Extension Campus Data Analytics Bootcamp Final Project
 
+### Team Members
 
-## Presentation
-### Selected Topic
+| **Member**            | **Primary Role**         | **Responsibilities**                                |
+|-------------------------|:------------------------:|-----------------------------------------------------|
+|**[Aslesha Vangareddy](https://github.com/AsleshaV)**    |Dashboard                |Manage the development of the dashboard               |
+|**[Jerri Morales](https://github.com/jerrimor)**   |Database               |Manage the developement of the database          |
+|**[Carl Stewart](https://github.com/CarlS2rt)**       |Maching Learning Model |Manage the developement of the machine learning model|
+|**[Eric Himburg](https://github.com/eric-himburg)**    |Machine Learning Model   |Manage the development of the machine learning model|
+|**[Nate Millmann](https://github.com/millmannnate)**   |Machine Learning Model   |Manage the development of the machine learning model |
+|**[John Beauchamp](https://github.com/1on1pt)**  |GitHub; Database   |Manage GitHub repository; assist with database development |
+
+**Although Team Members had a *Primary Role*, each contributed to all aspects of this final project.**
+                                                                        
+## Overview
+### Selected Topic - Analysis of Stock Performance
 Using machine learning models to predict the performance of stocks from the JPX Tokyo Stock Exchange and rank the stocks from highest to lowest expected returns.  
 
 ### Reason for Selected Topic
@@ -19,6 +32,8 @@ This dataset contains historic data for a variety of Japanese stocks and options
 2.	Which machine learning model makes the most accurate predictions of the stock market? 
 3.	Are hybrid machine learning models more accurate than one simple model?
 
+### Presentation
+The presentation is hosted on Google Slides and can be accessed [here](https://docs.google.com/presentation/d/1YIA2DkOoDofQbNiOO2Xbnr-BA07IlXciiKUgL-yjzWU/edit?usp=sharing).
 
 ## GitHub
 ### Main Branch
@@ -41,7 +56,18 @@ This dataset contains historic data for a variety of Japanese stocks and options
 
 ## Machine Learning
 Three different models will be used to make TSE stock predictions.
-1.	Stacked LSTM – Built upon the original long short-term memory model or LSTM model, the Stacked LSTM has multiple hidden LSTM layers and each layer contains multiple memory cells.  An LSTM layer creates a sequence output rather than a single output value.  Hence, for every input time step there is an output time.  This makes it ideal for making time-based stock market predictions. A Stacked LSTM model will be created using the Keras Python deep learning library.   
+
+##### Stacked LSTM 
+
+Built upon the original long short-term memory model or LSTM model, the Stacked LSTM has multiple hidden LSTM layers and each layer contains multiple memory cells.  An LSTM layer creates a sequence output rather than a single output value.  Hence, for every input time step there is an output time.  This makes it ideal for making time-based stock market predictions. A Stacked LSTM model will be created using the Keras Python deep learning library.   
+
+##### Prophet
+
+Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and typically handles outliers well (https://github.com/facebook/prophet).
+
+##### Neural Prophet
+
+A Neural Network based Time-Series model, inspired by [Facebook Prophet](https://github.com/facebook/prophet) and [AR-Net](https://github.com/ourownstory/AR-Net), built on PyTorch. NeuralProphet is a hybrid forecasting framework based on PyTorch and trained with standard deep learning methods, making it easy for developers to extend the framework. Local context is introduced with auto-regression and covariate modules, which can be configured as classical linear regression or as Neural Networks. Otherwise, NeuralProphet retains the design philosophy of Prophet and provides the same basic model components (https://github.com/ourownstory/neural_prophet).  
 
 
 ## Database
@@ -83,12 +109,6 @@ The following are the provisional ERDs:
 #### *The Complete Tables*
 
 ![ERD_stockoptions_financials_long](https://user-images.githubusercontent.com/94148420/167268663-f20238b7-126a-42ba-a843-e8c3c5af5b4f.PNG)
-
-### Sample Data that Mimics the Expected Final Database Structure or Schema
-
-
-
-### Draft Machine Learning Model is Connected to the Provisional Database
 
 
 
