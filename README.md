@@ -17,7 +17,7 @@
 
 **Although Team Members had a *Primary Role*, each contributed to all aspects of this final project.**
                                                                         
-## Overview
+## Presentation
 ### Selected Topic - Analysis of Stock Performance
 Using machine learning models to predict the performance of stocks from the JPX Tokyo Stock Exchange and rank the stocks from highest to lowest expected returns.  
 
@@ -32,12 +32,21 @@ This dataset contains historic data for a variety of Japanese stocks and options
 2.	Which machine learning model makes the most accurate predictions of the stock market? 
 3.	Are hybrid machine learning models more accurate than one simple model?
 
+### Description of Data Exploration Phase of Project
+
+
+### Description of the Analysis Phase of the Project
+
+
+
 ### Presentation
 The presentation is hosted on Google Slides and can be accessed [here](https://docs.google.com/presentation/d/1YIA2DkOoDofQbNiOO2Xbnr-BA07IlXciiKUgL-yjzWU/edit?usp=sharing).
 
 ## GitHub
 ### Main Branch
 * Includes README.md
+* Code necessary to perform exploratory analysis
+* Some code necessary to complete the machine learning portion of the project
 
 ### README.md Must Include
 * Description of communication protocol
@@ -46,6 +55,11 @@ The presentation is hosted on Google Slides and can be accessed [here](https://d
     * Use of **email**
     * Use of **Zoom** meetings as necessary
     * During **Zoom in-class sessions**
+
+* Outline of the project
+![project_outline](https://user-images.githubusercontent.com/94148420/168448850-38caa56f-0355-432f-895e-5d46030d3050.PNG)
+
+
 
 ### Individual Branches
 * At least one branch for each team member
