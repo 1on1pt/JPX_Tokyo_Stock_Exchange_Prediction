@@ -33,7 +33,7 @@ This dataset contains historic data for a variety of Japanese stocks and options
 3.	Are hybrid machine learning models more accurate than one simple model?
 
 ### Presentation
-The presentation is hosted on Google Slides and can be accessed [here] (https://docs.google.com/presentation/d/1YIA2DkOoDofQbNiOO2Xbnr-BA07IlXciiKUgL-yjzWU/edit?usp=sharing).
+The presentation is hosted on Google Slides and can be accessed [here](https://docs.google.com/presentation/d/1YIA2DkOoDofQbNiOO2Xbnr-BA07IlXciiKUgL-yjzWU/edit?usp=sharing).
 
 ## GitHub
 ### Main Branch
