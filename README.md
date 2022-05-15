@@ -38,6 +38,9 @@ This dataset contains historic data for a variety of Japanese stocks and options
 #### Data Exploration Summary
 Ultimately, two of the files from the extraction were considered essential for this project:
 * https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/train_files/financials.csv
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/train_files/stock_prices.csv
+
+These two files were cleaned of unneeded columns and null values:
 * 
 ### Description of the Analysis Phase of the Project
 
