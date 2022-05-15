@@ -35,6 +35,20 @@ This dataset contains historic data for a variety of Japanese stocks and options
 ### Description of Data Exploration Phase of Project
 ![etl_process](https://user-images.githubusercontent.com/94148420/168453788-457db515-af66-4767-acad-abb4d0056eb1.PNG)
 
+#### Data Exploration Summary
+Ultimately, two of the files from the extraction were considered essential for this project:
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/train_files/financials.csv
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/train_files/stock_prices.csv
+
+These two files were cleaned of unnecessary columns, rows, and null values:
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/financials_clean.ipynb
+
+![financials_clean_head](https://user-images.githubusercontent.com/94148420/168492280-ee64b2f7-34c7-4f5f-99ab-3d98e8d02349.PNG)
+
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/prices_clean.ipynb
+
+![stock_prices_clean_head](https://user-images.githubusercontent.com/94148420/168492410-8b126785-4e41-43fd-b1f5-bc60e043edaf.PNG)
+
 
 ### Description of the Analysis Phase of the Project
 
