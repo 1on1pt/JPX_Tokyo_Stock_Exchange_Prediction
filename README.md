@@ -33,6 +33,7 @@ This dataset contains historic data for a variety of Japanese stocks and options
 3.	Are hybrid machine learning models more accurate than one simple model?
 
 ### Description of Data Exploration Phase of Project
+![etl_process](https://user-images.githubusercontent.com/94148420/168453788-457db515-af66-4767-acad-abb4d0056eb1.PNG)
 
 
 ### Description of the Analysis Phase of the Project
