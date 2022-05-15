@@ -47,7 +47,11 @@ The presentation is hosted on Google Slides and can be accessed [here](https://d
 ### Main Branch
 * Includes README.md
 * Code necessary to perform exploratory analysis
+
+
 * Some code necessary to complete the machine learning portion of the project
+    * https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/JPX_Prophet_results_testing.ipynb
+
 
 ### README.md Must Include
 * Description of communication protocol
