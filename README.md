@@ -41,7 +41,8 @@ Ultimately, two of the files from the extraction were considered essential for t
 * https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/train_files/stock_prices.csv
 
 These two files were cleaned of unneeded columns and null values:
-* 
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/financials_clean.ipynb
+    * 
 ### Description of the Analysis Phase of the Project
 
 
