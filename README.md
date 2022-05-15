@@ -85,7 +85,38 @@ Prophet is a procedure for forecasting time series data based on an additive mod
 A Neural Network based Time-Series model, inspired by [Facebook Prophet](https://github.com/facebook/prophet) and [AR-Net](https://github.com/ourownstory/AR-Net), built on PyTorch. NeuralProphet is a hybrid forecasting framework based on PyTorch and trained with standard deep learning methods, making it easy for developers to extend the framework. Local context is introduced with auto-regression and covariate modules, which can be configured as classical linear regression or as Neural Networks. Otherwise, NeuralProphet retains the design philosophy of Prophet and provides the same basic model components (https://github.com/ourownstory/neural_prophet).  
 
 
+### Description of Preliminary Data Preprocessing
+
+
+
+### Description of Preliminary Feature Engineering and Preliminary Feature Selection (including decision-making process)
+
+
+
+### Explanation of Model Choice (including limitations and benefits)
+
+
+
+
+
 ## Database
+
+### Database Stores Static Data for Use During the Project
+
+
+
+### Database Interfaces with the Project in Some Format (database connects to the model)
+
+
+
+### Includes at Least Two Tables
+
+
+
+### Includes at Least One Join Using Database Language
+
+
+
 A **provisional database** has been developed using PostgreSQL 11 within the pgAdmin 4 environment.
 
 This database contains five tables:
@@ -128,7 +159,20 @@ The following are the provisional ERDs:
 
 
 ## Dashboard
-* N/A this week
+### Storyboard on Google Slides
+
+
+
+### Description of the Tools That Will Be Used to Create the Final Dashboard
+
+
+
+
+### Description of the Interactive Elements
+
+
+
+
 
 
 
