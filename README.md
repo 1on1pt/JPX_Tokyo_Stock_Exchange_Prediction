@@ -47,6 +47,8 @@ These two files were cleaned of unneeded columns and null values:
 
 * https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/prices_clean.ipynb
 
+![stock_prices_clean_head](https://user-images.githubusercontent.com/94148420/168492410-8b126785-4e41-43fd-b1f5-bc60e043edaf.PNG)
+
 
 ### Description of the Analysis Phase of the Project
 
