@@ -2,10 +2,23 @@
 
 ![tokyo-stock-exchange](https://user-images.githubusercontent.com/94148420/166913015-6cb22041-0dd8-48f7-9b79-f8fef31ab4b9.jpg)
 
+##### University of Wisconsin Extension Campus Data Analytics Bootcamp Final Project
 
+### Team Members
 
+| **Member**            | **Primary Role**         | **Responsibilities**                                |
+|-------------------------|:------------------------:|-----------------------------------------------------|
+|**[Aslesha Vangareddy](https://github.com/AsleshaV)**    |Dashboard                |Manage the development of the dashboard               |
+|**[Jerri Morales](https://github.com/jerrimor)**   |Database               |Manage the developement of the database          |
+|**[Carl Stewart](https://github.com/CarlS2rt)**       |Maching Learning Model |Manage the developement of the machine learning model|
+|**[Eric Himburg](https://github.com/eric-himburg)**    |Machine Learning Model   |Manage the development of the machine learning model|
+|**[Nate Millmann](https://github.com/millmannnate)**   |Machine Learning Model   |Manage the development of the machine learning model |
+|**[John Beauchamp](https://github.com/1on1pt)**  |GitHub; Database   |Manage GitHub repository; assist with database development |
+
+**Although Team Members had a *Primary Role*, each contributed to all aspects of this final project.**
+                                                                        
 ## Presentation
-### Selected Topic
+### Selected Topic - Analysis of Stock Performance
 Using machine learning models to predict the performance of stocks from the JPX Tokyo Stock Exchange and rank the stocks from highest to lowest expected returns.  
 
 ### Reason for Selected Topic
@@ -19,10 +32,40 @@ This dataset contains historic data for a variety of Japanese stocks and options
 2.	Which machine learning model makes the most accurate predictions of the stock market? 
 3.	Are hybrid machine learning models more accurate than one simple model?
 
+### Description of Data Exploration Phase of Project
+![etl_process](https://user-images.githubusercontent.com/94148420/168453788-457db515-af66-4767-acad-abb4d0056eb1.PNG)
+
+#### Data Exploration Summary
+Ultimately, two of the files from the extraction were considered essential for this project:
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/train_files/financials.csv
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/train_files/stock_prices.csv
+
+These two files were cleaned of unnecessary columns, rows, and null values:
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/financials_clean.ipynb
+
+![financials_clean_head](https://user-images.githubusercontent.com/94148420/168492280-ee64b2f7-34c7-4f5f-99ab-3d98e8d02349.PNG)
+
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/prices_clean.ipynb
+
+![stock_prices_clean_head](https://user-images.githubusercontent.com/94148420/168492410-8b126785-4e41-43fd-b1f5-bc60e043edaf.PNG)
+
+
+### Description of the Analysis Phase of the Project
+
+
+
+### Presentation
+The presentation is hosted on Google Slides and can be accessed [here](https://docs.google.com/presentation/d/1YIA2DkOoDofQbNiOO2Xbnr-BA07IlXciiKUgL-yjzWU/edit?usp=sharing).
 
 ## GitHub
 ### Main Branch
 * Includes README.md
+* Code necessary to perform exploratory analysis
+
+
+* Some code necessary to complete the machine learning portion of the project
+    * https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/JPX_Prophet_results_testing.ipynb
+
 
 ### README.md Must Include
 * Description of communication protocol
@@ -31,6 +74,11 @@ This dataset contains historic data for a variety of Japanese stocks and options
     * Use of **email**
     * Use of **Zoom** meetings as necessary
     * During **Zoom in-class sessions**
+
+* Outline of the project
+![project_outline](https://user-images.githubusercontent.com/94148420/168448850-38caa56f-0355-432f-895e-5d46030d3050.PNG)
+
+
 
 ### Individual Branches
 * At least one branch for each team member
@@ -55,7 +103,38 @@ Prophet is a procedure for forecasting time series data based on an additive mod
 A Neural Network based Time-Series model, inspired by [Facebook Prophet](https://github.com/facebook/prophet) and [AR-Net](https://github.com/ourownstory/AR-Net), built on PyTorch. NeuralProphet is a hybrid forecasting framework based on PyTorch and trained with standard deep learning methods, making it easy for developers to extend the framework. Local context is introduced with auto-regression and covariate modules, which can be configured as classical linear regression or as Neural Networks. Otherwise, NeuralProphet retains the design philosophy of Prophet and provides the same basic model components (https://github.com/ourownstory/neural_prophet).  
 
 
+### Description of Preliminary Data Preprocessing
+
+
+
+### Description of Preliminary Feature Engineering and Preliminary Feature Selection (including decision-making process)
+
+
+
+### Explanation of Model Choice (including limitations and benefits)
+
+
+
+
+
 ## Database
+
+### Database Stores Static Data for Use During the Project
+
+
+
+### Database Interfaces with the Project in Some Format (database connects to the model)
+
+
+
+### Includes at Least Two Tables
+
+
+
+### Includes at Least One Join Using Database Language
+
+
+
 A **provisional database** has been developed using PostgreSQL 11 within the pgAdmin 4 environment.
 
 This database contains five tables:
@@ -98,7 +177,20 @@ The following are the provisional ERDs:
 
 
 ## Dashboard
-* N/A this week
+### Storyboard on Google Slides
+
+
+
+### Description of the Tools That Will Be Used to Create the Final Dashboard
+#### Tableau
+
+
+
+### Description of the Interactive Elements
+
+
+
+
 
 
 
