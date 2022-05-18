@@ -135,44 +135,8 @@ A Neural Network based Time-Series model, inspired by [Facebook Prophet](https:/
 
 
 
-A **provisional database** has been developed using PostgreSQL 11 within the pgAdmin 4 environment.
+### Includes at Least One Connection String (using SQLAlchemy or PyMongo)
 
-This database contains five tables:
-1. stock_list
-   * Primary Key = securities_code (integer)
-
-2. stock_price
-   * Primary Key = row_id (character varying)
-   * Foreign Key = securities_code (integer)
-
-3. stock_options
-   * Primary Key = date_code (character varying)
-
-4. financials
-   * Primary Key = disclosure_num (integer)
-   * Foriegn Key = date_code (character varying)
-
-5. trades
-   * Primary Key = publisheddate (date)
-   * Primary Key = section (character varying)
-
-### Entity Relationship Diagrams (ERDs)
-The following are the provisional ERDs:
-* **stock_list & stock_price**
-
-![ERD_stocklist_stockprice](https://user-images.githubusercontent.com/94148420/167268629-a31c1dae-83c0-49d2-b0dc-522efff9f691.PNG)
-
-
-* **stock_option & financials**
-
-#### *Showing the Relationship*
-
-![ERD_stockoptions_financials_short](https://user-images.githubusercontent.com/94148420/167268666-08f5a6fc-c079-462c-ad25-7ca8e069e920.PNG)
-
-
-#### *The Complete Tables*
-
-![ERD_stockoptions_financials_long](https://user-images.githubusercontent.com/94148420/167268663-f20238b7-126a-42ba-a843-e8c3c5af5b4f.PNG)
 
 
 
