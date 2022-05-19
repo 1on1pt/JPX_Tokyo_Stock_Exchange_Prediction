@@ -159,7 +159,7 @@ And the connection for **financials**:
 
 ## Dashboard
 ### Storyboard on Google Slides
-![storyboard](Images/Storyboard JPX.png)
+![storyboard](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/8fb2baf324bb3ccac0757dc0224d3b8e64565a14/Images/Storyboard%20JPX.png)
 
 
 ### Description of the Tools That Will Be Used to Create the Final Dashboard
