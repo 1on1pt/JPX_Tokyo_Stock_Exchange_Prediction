@@ -120,11 +120,14 @@ A Neural Network based Time-Series model, inspired by [Facebook Prophet](https:/
 ## Database
 
 ### Database Stores Static Data for Use During the Project
+The static data is the Japanese stock information for the years of 2017 thru 2021. That data was obtained and stored within a .csv file. The .csv files were uploaded into Postgres SQL tables via AWS after the data was cleaned.  Here are the two "clean" .csv files that will be used for this project:
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/Resources/financials_clean.csv
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/Resources/prices_clean.csv
 
-
+After the **Extract** and **Transform** processes were done on the Japanese stock data, the **Load** process was completed to get the data into Postgres SQL for use in the machine learning tools. An RDS database, within AWS, was created, which in turn produced an endpoint for sharing with the team members to allow them access to the database.
 
 ### Database Interfaces with the Project in Some Format (database connects to the model)
-
+The database for this project will connect with the machine learning models via AWS RDS.
 
 
 ### Includes at Least Two Tables
@@ -135,45 +138,23 @@ A Neural Network based Time-Series model, inspired by [Facebook Prophet](https:/
 
 
 
-A **provisional database** has been developed using PostgreSQL 11 within the pgAdmin 4 environment.
+### Includes at Least One Connection String
+The database tables from pgAdmin 4 were connected with AWS RDS via a connection string using pyspark.
 
-This database contains five tables:
-1. stock_list
-   * Primary Key = securities_code (integer)
+Here is the connection for **prices**:
 
-2. stock_price
-   * Primary Key = row_id (character varying)
-   * Foreign Key = securities_code (integer)
-
-3. stock_options
-   * Primary Key = date_code (character varying)
-
-4. financials
-   * Primary Key = disclosure_num (integer)
-   * Foriegn Key = date_code (character varying)
-
-5. trades
-   * Primary Key = publisheddate (date)
-   * Primary Key = section (character varying)
-
-### Entity Relationship Diagrams (ERDs)
-The following are the provisional ERDs:
-* **stock_list & stock_price**
-
-![ERD_stocklist_stockprice](https://user-images.githubusercontent.com/94148420/167268629-a31c1dae-83c0-49d2-b0dc-522efff9f691.PNG)
+![prices_pyspark](https://user-images.githubusercontent.com/94148420/169187396-3a37bd1d-a992-412d-bfc0-8d18d0cf39dc.PNG)
 
 
-* **stock_option & financials**
-
-#### *Showing the Relationship*
-
-![ERD_stockoptions_financials_short](https://user-images.githubusercontent.com/94148420/167268666-08f5a6fc-c079-462c-ad25-7ca8e069e920.PNG)
+![prices_rds](https://user-images.githubusercontent.com/94148420/169187427-0a7b9c0b-67e7-4782-b382-2351aefa82be.PNG)
 
 
-#### *The Complete Tables*
+And the connection for **financials**:
 
-![ERD_stockoptions_financials_long](https://user-images.githubusercontent.com/94148420/167268663-f20238b7-126a-42ba-a843-e8c3c5af5b4f.PNG)
+![financials_pyspark](https://user-images.githubusercontent.com/94148420/169187466-371f0d36-0929-4a58-96b4-d61c9293a4f5.PNG)
 
+
+![financials_rds](https://user-images.githubusercontent.com/94148420/169187489-e927e8ae-1948-4c73-bf4a-0f409ca7b5e1.PNG)
 
 
 ## Dashboard
@@ -183,7 +164,10 @@ The following are the provisional ERDs:
 
 ### Description of the Tools That Will Be Used to Create the Final Dashboard
 #### Tableau
-
+Tableau will be used to visualize the dashboards for this project.  Tableau Public will be used locally to create the dashboards, then the visualizations will be shared via the Tableau Server.  There are three primary formats within the Tableau environment:
+* **Worksheets -** The building blocks of the visualizations from which dashboards and stories are created.
+* **Dashboards -** The collection of worksheets formatted to present data in a way that is easy to read and understand.
+* **Stories -** A collection of *dashboards* that includes narration of what is occurring with the data.
 
 
 ### Description of the Interactive Elements
