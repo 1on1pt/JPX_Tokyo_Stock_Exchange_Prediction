@@ -147,7 +147,10 @@ A Neural Network based Time-Series model, inspired by [Facebook Prophet](https:/
 
 ### Description of the Tools That Will Be Used to Create the Final Dashboard
 #### Tableau
-
+Tableau will be used to visualize the dashboards for this project.  Tableau Public will be used locally to create the dashboards, then the visualizations will be shared via the Tableau Server.  There are three primary formats within the Tableau environment:
+* **Worksheets -** The building blocks of the visualizations from which dashboards and stories are created.
+* **Dashboards -** The collection of worksheets formatted to present data in a way that is easy to read and understand.
+* **Stories -** A collection of *dashboards* that includes narration of what is occurring with the data.
 
 
 ### Description of the Interactive Elements
