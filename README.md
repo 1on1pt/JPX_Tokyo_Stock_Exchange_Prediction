@@ -127,7 +127,7 @@ The static data is the Japanese stock information for the years of 2017 thru 202
 After the **Extract** and **Transform** processes were done on the Japanese stock data, the **Load** process was completed to get the data into Postgres SQL for use in the machine learning tools. An RDS database, within AWS, was created, which in turn produced an endpoint for sharing with the team members to allow them access to the database.
 
 ### Database Interfaces with the Project in Some Format (database connects to the model)
-
+The database for this project will connect with the machine learning models via AWS RDS.
 
 
 ### Includes at Least Two Tables
@@ -139,6 +139,8 @@ After the **Extract** and **Transform** processes were done on the Japanese stoc
 
 
 ### Includes at Least One Connection String (using SQLAlchemy or PyMongo)
+The database tables from pgAdmin 4 were connected with AWS RDS via a connection string using SQLAlchemy.
+
 
 
 
