@@ -159,7 +159,7 @@ And the connection for **financials**:
 
 ## Dashboard
 ### Storyboard on Google Slides
-
+![storyboard](Images/Storyboard JPX.png)
 
 
 ### Description of the Tools That Will Be Used to Create the Final Dashboard
