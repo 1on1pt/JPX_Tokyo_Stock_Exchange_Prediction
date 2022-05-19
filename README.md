@@ -120,7 +120,9 @@ A Neural Network based Time-Series model, inspired by [Facebook Prophet](https:/
 ## Database
 
 ### Database Stores Static Data for Use During the Project
-
+The static data is the Japanese stock information for the years of 2017 thru 2021. That data was obtained and stored within a .csv file. The .csv files were uploaded into Postgres SQL tables via AWS after the data was cleaned.  Here are the two "clean" .csv files that will be used for this project:
+* 
+After the Extract and Transform processes were done on the Japanese stock data, the Load process was completed to get the data into Postgres SQL for use in the machine learning tools. An RDS database, within AWS, was created which in turn produced an endpoint for sharing with the team members to allow them access to the database.
 
 
 ### Database Interfaces with the Project in Some Format (database connects to the model)
