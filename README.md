@@ -172,6 +172,6 @@ Tableau will be used to visualize the dashboards for this project.  Tableau Publ
 
 ### Description of the Interactive Elements
 Two interactive dashboards will be created in Tableau:
-1. Ability for the user to select a particular stock within the Stacked LSTM model
-2. Ability for the user to select a particular stock within the prophet model
+1. Ability for the user to select a *specific stock* within the **Stacked LSTM model**
+2. Ability for the user to select a *specific stock* within the **Prophet model**
 
