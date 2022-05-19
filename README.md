@@ -138,11 +138,23 @@ The database for this project will connect with the machine learning models via 
 
 
 
-### Includes at Least One Connection String (using SQLAlchemy or PyMongo)
-The database tables from pgAdmin 4 were connected with AWS RDS via a connection string using SQLAlchemy.
+### Includes at Least One Connection String
+The database tables from pgAdmin 4 were connected with AWS RDS via a connection string using pyspark.
+
+Here is the connection for stock_prices:
+
+![prices_pyspark](https://user-images.githubusercontent.com/94148420/169187396-3a37bd1d-a992-412d-bfc0-8d18d0cf39dc.PNG)
 
 
+![prices_rds](https://user-images.githubusercontent.com/94148420/169187427-0a7b9c0b-67e7-4782-b382-2351aefa82be.PNG)
 
+
+And the connection for financials:
+
+![financials_pyspark](https://user-images.githubusercontent.com/94148420/169187466-371f0d36-0929-4a58-96b4-d61c9293a4f5.PNG)
+
+
+![financials_rds](https://user-images.githubusercontent.com/94148420/169187489-e927e8ae-1948-4c73-bf4a-0f409ca7b5e1.PNG)
 
 
 ## Dashboard
