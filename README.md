@@ -131,6 +131,9 @@ The database for this project will connect with the machine learning models via 
 
 
 ### Includes at Least Two Tables
+Two tables were created for this project:
+* financials_table
+
 
 
 
