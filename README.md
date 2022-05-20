@@ -131,20 +131,27 @@ The database for this project will connect with the machine learning models via 
 
 
 ### Includes at Least Two Tables
-Two tables were created for this project:
+Three tables were created for this project:
 1. financials_table
 
-https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/Images/08FF9CE0-A329-4CC0-9F32-2DE5C9EB6294.jpeg
+![financials_table](https://user-images.githubusercontent.com/94148420/169620559-af69d5d4-1062-4979-9666-187301dba186.PNG)
 
 
 2. prices_table
 
-https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/Images/9902DDFF-21A8-4306-8386-01D408F2EF89.jpeg
+![prices_table](https://user-images.githubusercontent.com/94148420/169620582-2aa37b68-7ca6-41e4-a17c-a94690ab5501.PNG)
 
 
-
+3. materials_change
+* This is the join, see below.
 
 ### Includes at Least One Join Using Database Language
+materials_change is the join.
+
+![query_join](https://user-images.githubusercontent.com/94148420/169620737-a6ef511c-4df0-46e9-952c-ae4c6607ccf3.PNG)
+
+
+![join_table](https://user-images.githubusercontent.com/94148420/169620762-2cccfad0-81bb-46ae-a09f-e92b39874509.PNG)
 
 
 
