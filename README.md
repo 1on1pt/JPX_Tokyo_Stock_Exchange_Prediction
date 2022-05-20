@@ -98,7 +98,7 @@ Built upon the original long short-term memory model or LSTM model, the Stacked 
 
 Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and typically handles outliers well (https://github.com/facebook/prophet).
 
-##### Neural Prophet
+##### NeuralProphet
 
 A Neural Network based Time-Series model, inspired by [Facebook Prophet](https://github.com/facebook/prophet) and [AR-Net](https://github.com/ourownstory/AR-Net), built on PyTorch. NeuralProphet is a hybrid forecasting framework based on PyTorch and trained with standard deep learning methods, making it easy for developers to extend the framework. Local context is introduced with auto-regression and covariate modules, which can be configured as classical linear regression or as Neural Networks. Otherwise, NeuralProphet retains the design philosophy of Prophet and provides the same basic model components (https://github.com/ourownstory/neural_prophet).  
 
@@ -173,5 +173,5 @@ Tableau will be used to visualize the dashboards for this project.  Tableau Publ
 ### Description of the Interactive Elements
 Two interactive dashboards will be created in Tableau:
 1. Ability for the user to select a *specific stock* within the **Stacked LSTM model**
-2. Ability for the user to select a *specific stock* within the **Prophet model**
+2. Ability for the user to select a *specific stock* within the **NeuralProphet model**
 
