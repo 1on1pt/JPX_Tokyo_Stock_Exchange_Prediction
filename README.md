@@ -139,7 +139,7 @@ https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/Images/
 
 2. prices_table
 
-
+https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/Images/9902DDFF-21A8-4306-8386-01D408F2EF89.jpeg
 
 
 
