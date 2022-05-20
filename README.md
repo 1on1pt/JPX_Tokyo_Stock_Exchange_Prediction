@@ -132,7 +132,14 @@ The database for this project will connect with the machine learning models via 
 
 ### Includes at Least Two Tables
 Two tables were created for this project:
-* financials_table
+1. financials_table
+
+https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/Images/08FF9CE0-A329-4CC0-9F32-2DE5C9EB6294.jpeg
+
+
+2. prices_table
+
+
 
 
 
