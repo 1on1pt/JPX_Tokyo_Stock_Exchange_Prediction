@@ -148,7 +148,7 @@ Three tables were created for this project:
 * This is the join, see below.
 
 ### Includes at Least One Join Using Database Language
-materials_change is the join.
+The join was created to bring together some data from the prices and the financials tables. The 'securitiescode' column was used to 'JOIN' 'ON' and an 'INNER JOIN' was utilized so that the fields of both tables would be reflected. The materials_change table (view) is below:
 
 ![query_join](https://user-images.githubusercontent.com/94148420/169620737-a6ef511c-4df0-46e9-952c-ae4c6607ccf3.PNG)
 
