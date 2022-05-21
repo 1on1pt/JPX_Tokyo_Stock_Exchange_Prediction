@@ -106,7 +106,7 @@ A Neural Network based Time-Series model, inspired by [Facebook Prophet](https:/
 ### Description of Preliminary Data Preprocessing
 The dataset used was acquired from the Japan Exchange Group, Inc. (JPX), which is a holding company operating the Tokyo Stock Exchange (TSE).  The dataset contains over four years of historical data on about 2000 Japanese stocks.  Preprocessing the data involved evaluating the class type of each column of data, checking for null values, and removing any rows of data where null values were found.  A screenshot below shows a portion of the Python code where null values were first evaluated and then removed.  Additional data preprocessing involved converting the ‘date’ column of data to datetime values so that days could be added and correct dates outputted for predictions.  Lastly, unique values of the security codes of the stocks in the dataset were put into a list.
 
-
+![part of python code showing preprocessing of data](images/stackedlstm_preprocessing.png)
 
 ### Description of Preliminary Feature Engineering and Preliminary Feature Selection (including decision-making process)
 
