@@ -121,8 +121,6 @@ for i in itemlist:
     d_df.columns = ['ds','y']
 ```
 
-
-
 ### Description of Preliminary Feature Engineering and Preliminary Feature Selection (including decision-making process)
 From the options available from the JPX dataset in the machine learning models, it was decided that only three of the twelve columns of data were necessary.  This included the date, security code, and the closing price of the stock.  The best predictor to determine future stock price is the closing price.  If enough time is available, there are plans to potentially use the high and low prices of each stock as well as the volume of stock traded.  After reducing the dataset down to three columns, a minmax scaler was applied to the closing price data in order to reduce any bias.  Next, the normalized closing price data was split into training and testing sets.  Sixty-five percent of the data was used for training and thirty-five percent for testing.  A 65%-35% split of data was chosen, as opposed for a more standard 80%-20% split, because time-series forecasting requires more values in the testing set.  The screenshot below shows the calculation of the root-mean-square-error (RMSE) modeling one stock using a 65%-35% split.   Because the training and testing RMSE values are so close, it indicates that neither underfitting or overfitting is occurring. 
 
@@ -154,8 +152,8 @@ The standard Prophet model has only basic time series features available, but th
 
 
 
-
 ### Explanation of Model Choice (including limitations and benefits)
+
 Three different models were chosen to forecast stock prices on the Tokyo Stock Exchange.  The first, Stacked LSTM was chosen because it is a stable and well-documented technique for challenging time-series prediction problems. For our task of predicting stock prices, a Stacked LSTM model creates a hierarchical representation of our time-series data where each layer's output will be used as an input to a subsequent LSTM layer. This hierarchy of hidden layers enables more complex representation of our time-series data, capturing information at different scales.  Hence, we are able to make reasonable future stock price predictions using historical stock price data.  
 
 The limitation of using a Stacked LSTM is the more complex the model, the greater amount of computational time required.  Ultimately, the Stacked LSTM had to be limited to 15 epochs and 100 input parameters in order to complete the prediction of 2000 stocks over two months in a reasonable time period (12 hours).  Additionally, Stacked LSTM models are easily underfitted or overfitted if the training and testing data are not distributed properly.   
@@ -163,6 +161,10 @@ The limitation of using a Stacked LSTM is the more complex the model, the greate
 The Prophet model was chosen for the ease with which it creates time series forecasts. Generally, the model is applied to a single time series, but it was able to loop over all 2000 codes in just under 2 hours once built into a for loop. The main limitation of the model is that it only considers the time series variables, including seasonality at different aggregations, holidays, and overall trends. Prophet cannot consider other, outside variables that may influence the stock close prices, such as company performance and general market fluctutation. 
 
 The Neural Prophet model was chosen for its ability to expand on the ease of the standard Prophet model to include deep learning and running multiple forecasts quickly. With the model set to run 56 different forecasts with 25 epochs for the 200 highest-performing stocks from the Prophet results, Neural Prophet ran those results in around 15-20 minutes. The model's limitation is similar to Prophet in that it only considers time series variables; though, through its different forecast iterations, Neural Prophet has higher predictive power than Prophet alone.
+=======
+Three different models were chosen to forecast stock prices on the Tokyo Stock Exchange.  The first, Stacked LSTM was chosen because it is a stable and well-documented technique for challenging time-series prediction problems. For our task of predicting stock prices, a Stacked LSTM model creates a hierarchical representation of our time-series data where each layer’s output will be used as an input to a subsequent LSTM layer. This hierarchy of hidden layers enables more complex representation of our time-series data, capturing information at different scales.  Hence, we are able to make reasonable future stock price predictions using historical stock price data.  
+The limitation of using a Stacked LSTM is the more complex the model, the greater amount of computational time required.  Ultimately, the Stacked LSTM had to be limited to 15 epochs and 100 input parameters in order to complete the prediction of 2000 stocks over two months in a reasonable time period (12 hours).  Additionally, Stacked LSTM models are easily underfitted or overfitted if the training and testing data are not distributed properly.   
+
 
 
 ## Database
@@ -183,7 +185,6 @@ Three tables were created for this project:
 1. financials_table
 
 ![financials_table](https://user-images.githubusercontent.com/94148420/169620559-af69d5d4-1062-4979-9666-187301dba186.PNG)
-
 
 2. prices_table
 
@@ -238,4 +239,6 @@ Tableau will be used to visualize the dashboards for this project.  Tableau Publ
 ### Description of the Interactive Elements
 Two interactive dashboards will be created in Tableau:
 1. Ability for the user to select a *specific stock* and *date* within the **Stacked LSTM model**
+
 2. Ability for the user to select a *specific stock* and *date* within the **NeuralProphet model**
+
