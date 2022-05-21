@@ -161,11 +161,6 @@ The limitation of using a Stacked LSTM is the more complex the model, the greate
 The Prophet model was chosen for the ease with which it creates time series forecasts. Generally, the model is applied to a single time series, but it was able to loop over all 2000 codes in just under 2 hours once built into a for loop. The main limitation of the model is that it only considers the time series variables, including seasonality at different aggregations, holidays, and overall trends. Prophet cannot consider other, outside variables that may influence the stock close prices, such as company performance and general market fluctutation. 
 
 The Neural Prophet model was chosen for its ability to expand on the ease of the standard Prophet model to include deep learning and running multiple forecasts quickly. With the model set to run 56 different forecasts with 25 epochs for the 200 highest-performing stocks from the Prophet results, Neural Prophet ran those results in around 15-20 minutes. The model's limitation is similar to Prophet in that it only considers time series variables; though, through its different forecast iterations, Neural Prophet has higher predictive power than Prophet alone.
-=======
-Three different models were chosen to forecast stock prices on the Tokyo Stock Exchange.  The first, Stacked LSTM was chosen because it is a stable and well-documented technique for challenging time-series prediction problems. For our task of predicting stock prices, a Stacked LSTM model creates a hierarchical representation of our time-series data where each layer’s output will be used as an input to a subsequent LSTM layer. This hierarchy of hidden layers enables more complex representation of our time-series data, capturing information at different scales.  Hence, we are able to make reasonable future stock price predictions using historical stock price data.  
-The limitation of using a Stacked LSTM is the more complex the model, the greater amount of computational time required.  Ultimately, the Stacked LSTM had to be limited to 15 epochs and 100 input parameters in order to complete the prediction of 2000 stocks over two months in a reasonable time period (12 hours).  Additionally, Stacked LSTM models are easily underfitted or overfitted if the training and testing data are not distributed properly.   
-
-
 
 ## Database
 
