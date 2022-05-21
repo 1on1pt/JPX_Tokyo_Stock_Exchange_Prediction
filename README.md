@@ -6,14 +6,14 @@
 
 ### Team Members
 
-| **Member**            | **Primary Role**         | **Responsibilities**                                |
-|-------------------------|:------------------------:|-----------------------------------------------------|
-|**[Aslesha Vangareddy](https://github.com/AsleshaV)**    |Dashboard                |Manage the development of the dashboard               |
-|**[Jerri Morales](https://github.com/jerrimor)**   |Database               |Manage the developement of the database          |
-|**[Carl Stewart](https://github.com/CarlS2rt)**       |Maching Learning Model |Manage the developement of the machine learning model|
-|**[Eric Himburg](https://github.com/eric-himburg)**    |Machine Learning Model   |Manage the development of the machine learning model|
-|**[Nate Millmann](https://github.com/millmannnate)**   |Machine Learning Model   |Manage the development of the machine learning model |
-|**[John Beauchamp](https://github.com/1on1pt)**  |GitHub; Database   |Manage GitHub repository; assist with database development |
+| **Member**                                            |    **Primary Role**    | **Responsibilities**                                       |
+| ----------------------------------------------------- | :--------------------: | ---------------------------------------------------------- |
+| **[Aslesha Vangareddy](https://github.com/AsleshaV)** |       Dashboard        | Manage the development of the dashboard                    |
+| **[Jerri Morales](https://github.com/jerrimor)**      |        Database        | Manage the developement of the database                    |
+| **[Carl Stewart](https://github.com/CarlS2rt)**       | Maching Learning Model | Manage the developement of the machine learning model      |
+| **[Eric Himburg](https://github.com/eric-himburg)**   | Machine Learning Model | Manage the development of the machine learning model       |
+| **[Nate Millmann](https://github.com/millmannnate)**  | Machine Learning Model | Manage the development of the machine learning model       |
+| **[John Beauchamp](https://github.com/1on1pt)**       |    GitHub; Database    | Manage GitHub repository; assist with database development |
 
 **Although Team Members had a *Primary Role*, each contributed to all aspects of this final project.**
                                                                         
@@ -106,17 +106,65 @@ A Neural Network based Time-Series model, inspired by [Facebook Prophet](https:/
 ### Description of Preliminary Data Preprocessing
 The dataset used was acquired from the Japan Exchange Group, Inc. (JPX), which is a holding company operating the Tokyo Stock Exchange (TSE).  The dataset contains over four years of historical data on about 2000 Japanese stocks.  Preprocessing the data involved evaluating the class type of each column of data, checking for null values, and removing any rows of data where null values were found.  A screenshot below shows a portion of the Python code where null values were first evaluated and then removed.  Additional data preprocessing involved converting the ‘date’ column of data to datetime values so that days could be added and correct dates outputted for predictions.  Lastly, unique values of the security codes of the stocks in the dataset were put into a list.
 
-![part of python code showing preprocessing of data](Images/stackedlstm_preprocessing.png)
+![part of python code showing preprocessing of data](https://raw.githubusercontent.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/main/Images/stackedlstm_preprocessing.png)
+
+The Prophet and Neural Prophet models required some model-specific preprocessing to allow the model to run. Both models work on a time-series forecast approach and require the Date column to be 'ds' and the historical data to be 'y'. After the data was cleaned and grouped by the Securities Code and Date, the column values were renamed to conform with the model parameters in a for loop:
+
+```python
+for i in itemlist:
+    temp = df_grouped[df_grouped.SecuritiesCode == i]
+    temp = temp.drop(columns=['SecuritiesCode'])
+    temp['Date'] = pd.to_datetime(temp['Date'])
+    temp = temp.set_index('Date')
+    d_df = temp.resample('D').sum()
+    d_df = d_df.reset_index().dropna()
+    d_df.columns = ['ds','y']
+```
 
 ### Description of Preliminary Feature Engineering and Preliminary Feature Selection (including decision-making process)
 From the options available from the JPX dataset in the machine learning models, it was decided that only three of the twelve columns of data were necessary.  This included the date, security code, and the closing price of the stock.  The best predictor to determine future stock price is the closing price.  If enough time is available, there are plans to potentially use the high and low prices of each stock as well as the volume of stock traded.  After reducing the dataset down to three columns, a minmax scaler was applied to the closing price data in order to reduce any bias.  Next, the normalized closing price data was split into training and testing sets.  Sixty-five percent of the data was used for training and thirty-five percent for testing.  A 65%-35% split of data was chosen, as opposed for a more standard 80%-20% split, because time-series forecasting requires more values in the testing set.  The screenshot below shows the calculation of the root-mean-square-error (RMSE) modeling one stock using a 65%-35% split.   Because the training and testing RMSE values are so close, it indicates that neither underfitting or overfitting is occurring. 
 
-![part of python code root-mean-square-error of training and testing data](Images/preliminary_engineering.png)
+![part of python code root-mean-square-error of training and testing data](https://raw.githubusercontent.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/main/Images/preliminary_engineering.png)
+
+The standard Prophet model has only basic time series features available, but the Neural Prophet model has the ability to add in additional choices, including changepoints, epochs, and learning rates. The Neural Prophet was the trained on the available historical dataset and built new forecasts with the code below:
+
+```python
+    m = NeuralProphet(
+        n_forecasts=56,
+        n_lags=60,
+        n_changepoints=50,
+        yearly_seasonality=True,
+        weekly_seasonality=True,
+        daily_seasonality=True,
+        batch_size=56,
+        epochs=25,
+        learning_rate=1.0,
+    )
+        
+    metrics = m.fit(d_df, freq="D")
+    
+    future = m.make_future_dataframe(d_df, periods=56, n_historic_predictions=len(df_grouped))
+    forecast = m.predict(future)
+    forecast['SecuritiesCode'] = i
+    forecast_all = pd.concat((forecast_all, forecast))
+  
+```
+
 
 
 ### Explanation of Model Choice (including limitations and benefits)
+
+Three different models were chosen to forecast stock prices on the Tokyo Stock Exchange.  The first, Stacked LSTM was chosen because it is a stable and well-documented technique for challenging time-series prediction problems. For our task of predicting stock prices, a Stacked LSTM model creates a hierarchical representation of our time-series data where each layer's output will be used as an input to a subsequent LSTM layer. This hierarchy of hidden layers enables more complex representation of our time-series data, capturing information at different scales.  Hence, we are able to make reasonable future stock price predictions using historical stock price data.  
+
+The limitation of using a Stacked LSTM is the more complex the model, the greater amount of computational time required.  Ultimately, the Stacked LSTM had to be limited to 15 epochs and 100 input parameters in order to complete the prediction of 2000 stocks over two months in a reasonable time period (12 hours).  Additionally, Stacked LSTM models are easily underfitted or overfitted if the training and testing data are not distributed properly.   
+
+The Prophet model was chosen for the ease with which it creates time series forecasts. Generally, the model is applied to a single time series, but it was able to loop over all 2000 codes in just under 2 hours once built into a for loop. The main limitation of the model is that it only considers the time series variables, including seasonality at different aggregations, holidays, and overall trends. Prophet cannot consider other, outside variables that may influence the stock close prices, such as company performance and general market fluctutation. 
+
+The Neural Prophet model was chosen for its ability to expand on the ease of the standard Prophet model to include deep learning and running multiple forecasts quickly. With the model set to run 56 different forecasts with 25 epochs for the 200 highest-performing stocks from the Prophet results, Neural Prophet ran those results in around 15-20 minutes. The model's limitation is similar to Prophet in that it only considers time series variables; though, through its different forecast iterations, Neural Prophet has higher predictive power than Prophet alone.
+=======
 Three different models were chosen to forecast stock prices on the Tokyo Stock Exchange.  The first, Stacked LSTM was chosen because it is a stable and well-documented technique for challenging time-series prediction problems. For our task of predicting stock prices, a Stacked LSTM model creates a hierarchical representation of our time-series data where each layer’s output will be used as an input to a subsequent LSTM layer. This hierarchy of hidden layers enables more complex representation of our time-series data, capturing information at different scales.  Hence, we are able to make reasonable future stock price predictions using historical stock price data.  
 The limitation of using a Stacked LSTM is the more complex the model, the greater amount of computational time required.  Ultimately, the Stacked LSTM had to be limited to 15 epochs and 100 input parameters in order to complete the prediction of 2000 stocks over two months in a reasonable time period (12 hours).  Additionally, Stacked LSTM models are easily underfitted or overfitted if the training and testing data are not distributed properly.   
+
 
 
 ## Database
@@ -137,7 +185,6 @@ Three tables were created for this project:
 1. financials_table
 
 ![financials_table](https://user-images.githubusercontent.com/94148420/169620559-af69d5d4-1062-4979-9666-187301dba186.PNG)
-
 
 2. prices_table
 
@@ -192,5 +239,6 @@ Tableau will be used to visualize the dashboards for this project.  Tableau Publ
 ### Description of the Interactive Elements
 Two interactive dashboards will be created in Tableau:
 1. Ability for the user to select a *specific stock* and *date* within the **Stacked LSTM model**
+
 2. Ability for the user to select a *specific stock* and *date* within the **NeuralProphet model**
 
