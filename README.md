@@ -106,16 +106,17 @@ A Neural Network based Time-Series model, inspired by [Facebook Prophet](https:/
 ### Description of Preliminary Data Preprocessing
 The dataset used was acquired from the Japan Exchange Group, Inc. (JPX), which is a holding company operating the Tokyo Stock Exchange (TSE).  The dataset contains over four years of historical data on about 2000 Japanese stocks.  Preprocessing the data involved evaluating the class type of each column of data, checking for null values, and removing any rows of data where null values were found.  A screenshot below shows a portion of the Python code where null values were first evaluated and then removed.  Additional data preprocessing involved converting the ‘date’ column of data to datetime values so that days could be added and correct dates outputted for predictions.  Lastly, unique values of the security codes of the stocks in the dataset were put into a list.
 
-![part of python code showing preprocessing of data](images/stackedlstm_preprocessing.png)
+![part of python code showing preprocessing of data](Images/stackedlstm_preprocessing.png)
 
 ### Description of Preliminary Feature Engineering and Preliminary Feature Selection (including decision-making process)
+From the options available from the JPX dataset in the machine learning models, it was decided that only three of the twelve columns of data were necessary.  This included the date, security code, and the closing price of the stock.  The best predictor to determine future stock price is the closing price.  If enough time is available, there are plans to potentially use the high and low prices of each stock as well as the volume of stock traded.  After reducing the dataset down to three columns, a minmax scaler was applied to the closing price data in order to reduce any bias.  Next, the normalized closing price data was split into training and testing sets.  Sixty-five percent of the data was used for training and thirty-five percent for testing.  A 65%-35% split of data was chosen, as opposed for a more standard 80%-20% split, because time-series forecasting requires more values in the testing set.  The screenshot below shows the calculation of the root-mean-square-error (RMSE) modeling one stock using a 65%-35% split.   Because the training and testing RMSE values are so close, it indicates that neither underfitting or overfitting is occurring. 
 
+![part of python code root-mean-square-error of training and testing data](Images/preliminary_engineering.png)
 
 
 ### Explanation of Model Choice (including limitations and benefits)
-
-
-
+Three different models were chosen to forecast stock prices on the Tokyo Stock Exchange.  The first, Stacked LSTMs was chosen because it is a stable and well-documented technique for challenging time-series prediction problems. For our task of predicting stock prices, a Stacked LSTM model creates a hierarchical representation of our time-series data where each layer’s output will be used as an input to a subsequent LSTM layer. This hierarchy of hidden layers enables more complex representation of our time-series data, capturing information at different scales.  Hence, we are able to make reasonable future stock price predictions using historical stock price data.  
+The limitation of using a Stacked LSTM is the more complex the model, the greater amount of computational time required.  Ultimately, the Stacked LSTM had to be limited to 15 epochs and 100 input parameters in order to complete the prediction of 2000 stocks over two months in a reasonable time period (12 hours).  Additionally, Stacked LSTM models are easily underfitted or overfitted if the training and testing data are not distributed properly.   
 
 
 ## Database
