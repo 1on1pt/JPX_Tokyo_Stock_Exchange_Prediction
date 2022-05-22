@@ -226,6 +226,7 @@ And the connection for **financials**:
 
 
 ### ERD
+The connection between the **financials_table** and the **prices_table** is the **securitiescode** column.
 
 ![ERD_financials_prices_tables](https://user-images.githubusercontent.com/94148420/169694854-7a5a5f7a-8223-4aa0-ac83-376723635073.PNG)
 
