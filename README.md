@@ -225,6 +225,11 @@ And the connection for **financials**:
 ![financials_rds](https://user-images.githubusercontent.com/94148420/169187489-e927e8ae-1948-4c73-bf4a-0f409ca7b5e1.PNG)
 
 
+### ERD
+
+![ERD_financials_prices_tables](https://user-images.githubusercontent.com/94148420/169694854-7a5a5f7a-8223-4aa0-ac83-376723635073.PNG)
+
+
 ## Dashboard
 ### Storyboard on Google Slides
 ![storyboard](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/8fb2baf324bb3ccac0757dc0224d3b8e64565a14/Images/Storyboard%20JPX.png)
