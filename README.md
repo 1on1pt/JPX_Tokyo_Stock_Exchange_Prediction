@@ -41,7 +41,7 @@ Ultimately, two of the files from the extraction were considered essential for t
 * https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/train_files/stock_prices.csv
 
 These two files were cleaned of unnecessary columns, rows, and null values:
-* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/Jerri/financials_clean.ipynb
+* https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/financials_clean.ipynb
 
 ![financials_clean_head](https://user-images.githubusercontent.com/94148420/168492280-ee64b2f7-34c7-4f5f-99ab-3d98e8d02349.PNG)
 
