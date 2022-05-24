@@ -12,7 +12,7 @@
 | **[Jerri Morales](https://github.com/jerrimor)**      |        Database        | Manage the developement of the database                    |
 | **[Carl Stewart](https://github.com/CarlS2rt)**       | Maching Learning Model | Manage the developement of the machine learning model      |
 | **[Eric Himburg](https://github.com/eric-himburg)**   | Machine Learning Model | Manage the development of the machine learning model       |
-| **[Nate Millmann](https://github.com/millmannnate)**  | Machine Learning Model; Dashboard | Manage the development of the machine learning model       |
+| **[Nate Millmann](https://github.com/millmannnate)**  | Machine Learning Model; Dashboard | Manage the development of the machine learning model; dashboard developement       |
 | **[John Beauchamp](https://github.com/1on1pt)**       |    GitHub; Database    | Manage GitHub repository; assist with database development |
 
 **Although Team Members had a *Primary Role*, each contributed to all aspects of this final project.**
