@@ -75,13 +75,6 @@ The presentation is hosted on Google Slides and can be accessed [here](https://d
 
 
 ### README.md Must Include
-* Description of communication protocol
-    * Via Slack on the **group-project-channel**
-    * Via Slack with **direct messaging**
-    * Use of **email**
-    * Use of **Zoom** meetings as necessary
-    * During **Zoom in-class sessions**
-
 * Outline of the project
 ![project_outline](https://user-images.githubusercontent.com/94148420/168448850-38caa56f-0355-432f-895e-5d46030d3050.PNG)
 
