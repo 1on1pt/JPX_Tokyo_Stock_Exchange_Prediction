@@ -9,6 +9,7 @@
 * [Machine Learning](#machine-learning)
 * [Database](#database)
 * [Dashboard](#dashboard)
+* [Google Slides Presentation](https://docs.google.com/presentation/d/1YIA2DkOoDofQbNiOO2Xbnr-BA07IlXciiKUgL-yjzWU/edit?usp=sharing)
 
 
 ### Team Members
