@@ -69,6 +69,11 @@ There will be six main parts to the analysis phase of the project.
 
 **Results of the final data analysis will be discussed in the project summary.**
 
+### Resources
+
+![resources_image](https://user-images.githubusercontent.com/94148420/170481277-13a276bf-6a59-4cc8-8a07-e734b48944b1.PNG)
+
+
 ### Presentation
 The presentation is hosted on Google Slides and can be accessed [here](https://docs.google.com/presentation/d/1YIA2DkOoDofQbNiOO2Xbnr-BA07IlXciiKUgL-yjzWU/edit?usp=sharing).
 
