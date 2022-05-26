@@ -170,6 +170,16 @@ The Prophet model was chosen for the ease with which it creates time series fore
 
 The Neural Prophet model was chosen for its ability to expand on the ease of the standard Prophet model to include deep learning and running multiple forecasts quickly. With the model set to run 56 different forecasts with 25 epochs for the 200 highest-performing stocks from the Prophet results, Neural Prophet ran those results in around 15-20 minutes. The model's limitation is similar to Prophet in that it only considers time series variables; though, through its different forecast iterations, Neural Prophet has higher predictive power than Prophet alone.
 
+### Explanation of Changes in Model Choice (if any)
+
+
+### Description of How Model has been Trained
+
+
+### Description of Current Accuracy Score
+
+
+
 ## Database
 
 ### Database Stores Static Data for Use During the Project
@@ -250,4 +260,15 @@ Two interactive dashboards will be created in Tableau:
 1. Ability for the user to select a *specific stock* and *date* within the **Stacked LSTM model**
 
 2. Ability for the user to select a *specific stock* and *date* within the **NeuralProphet model**
+
+
+### Images from Initial Analysis
+
+
+### Data (images or report) from the Machine Learning Task
+
+
+### At Least One Interactive Element
+
+
 
