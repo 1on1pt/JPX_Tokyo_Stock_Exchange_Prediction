@@ -75,7 +75,7 @@ There will be six main parts to the analysis phase of the project.
 
 
 ### Presentation
-The presentation is hosted on Google Slides and can be accessed [here](https://docs.google.com/presentation/d/1YIA2DkOoDofQbNiOO2Xbnr-BA07IlXciiKUgL-yjzWU/edit?usp=sharing).
+The presentation is hosted on Google Slides and can be accessed [here](https://docs.google.com/presentation/d/1edVy4hYBCBOtUxXZ-iFzxX-yDt1bUzcv-C_nE8Z_uqs/edit?usp=sharing).
 
 ## GitHub
 ### Main Branch
