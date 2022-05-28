@@ -5,6 +5,7 @@
 ##### University of Wisconsin Extension Campus Data Analytics Bootcamp Final Project
 
 ### Quick Links
+* [Presentation)(#presentation)
 * [GitHub](#github)
 * [Machine Learning](#machine-learning)
 * [Database](#database)
