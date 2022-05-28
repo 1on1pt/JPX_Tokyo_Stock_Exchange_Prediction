@@ -78,6 +78,8 @@ There will be six main parts to the analysis phase of the project.
 ### Presentation
 The presentation is hosted on Google Slides and can be accessed [here](https://docs.google.com/presentation/d/1edVy4hYBCBOtUxXZ-iFzxX-yDt1bUzcv-C_nE8Z_uqs/edit?usp=sharing).
 
+**Back to [Quick Links](#quick_links)**
+
 ## GitHub
 ### Main Branch
 * Includes README.md
@@ -100,6 +102,8 @@ The presentation is hosted on Google Slides and can be accessed [here](https://d
 
 * Each team member has at least four commits from the duration of first segment
     * To be tracked throughout the duration of this project
+
+**Back to [Quick Links](#quick_links)**
 
 ## Machine Learning
 Three different models will be used to make TSE stock predictions.
@@ -185,6 +189,7 @@ The Neural Prophet model was chosen for its ability to expand on the ease of the
 ### Description of Current Accuracy Score
 
 
+**Back to [Quick Links](#quick_links)**
 
 ## Database
 
@@ -247,6 +252,7 @@ The connection between the **financials_table** and the **prices_table** is the 
 
 ![ERD_financials_prices_tables](https://user-images.githubusercontent.com/94148420/169694854-7a5a5f7a-8223-4aa0-ac83-376723635073.PNG)
 
+**Back to [Quick Links](#quick_links)**
 
 ## Dashboard
 ### Storyboard on Google Slides
@@ -277,4 +283,5 @@ Two interactive dashboards will be created in Tableau:
 ### At Least One Interactive Element
 
 
+**Back to [Quick Links](#quick_links)**
 
