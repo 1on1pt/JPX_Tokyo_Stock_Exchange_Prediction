@@ -1,3 +1,6 @@
 train_files/secondary_stock_prices.csv filter=lfs diff=lfs merge=lfs -text
 train_files/stock_prices.csv filter=lfs diff=lfs merge=lfs -text
 train_files/options.csv filter=lfs diff=lfs merge=lfs -text
+Resources/financials_clean.csv filter=lfs diff=lfs merge=lfs -text
+Resources/prices_clean.csv filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
