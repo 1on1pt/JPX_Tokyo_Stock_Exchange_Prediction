@@ -182,12 +182,36 @@ The Neural Prophet model was chosen for its ability to expand on the ease of the
 
 ### Explanation of Changes in Model Choice (if any)
 
+The Prophet model was largely abandonded in favor of the more robust NeuralProphet model. The NeuralProphet model was downsized in scope to avoid the more involved AR Net, regreessor model. As a result, the parameters passed to the NeuralProphet model were reduced to just the number of epochs per training and the learning rate. For performance and time considerations, epochs were set to 50 isntead of the default 'automatic,' which tended to try 150-200 epochs by default. The learning rate was set to 1.0 to help accelerate fitting the modeel but also not over-fitting the model. Overall, the changes to the NeuralProphet model were minimal and mostly to improve performance and output. 
 
 ### Description of How Model has been Trained
 
+The NeuralProphet model was trained on all stock closing prices. The training also included trials with adding Japanese holidays to account for the trading closures, but the model ultimately picked up on them better without explicitly naming them in the training data. Additionally, training included looking for seeasonality trends at different aggregates: daily, weekly, and yearly. Ultimately, NeuralProphet sufficiently picked up on those trends independent of manually setting specific seasonality parameters or Fourier orders. 
+
+The model was trained to reduce loss factors, as shown below:
+![](https://raw.githubusercontent.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/main/Images/NP_live_loss.png)
+
+NeuralProphet was then able to plot the different training forecasts against the historical data to reduce loss and improve accuracy, as shown below:
+![](https://raw.githubusercontent.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/main/Images/NP_training_plot.png)
+
+NeuralProphet also generated seasonal trends and auto-regression trends from the training:
+
+![](https://raw.githubusercontent.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/main/Images/NP_plot_components.png)
 
 ### Description of Current Accuracy Score
 
+During the cross-validation testing, the NeuralProphet model generated the following accuracy score for Stock 6861:
+
+```python
+MAE
+	MAE              	 (min: 3820.626, max: 216478.183, cur: 3820.626)
+RMSE
+	RMSE             	 (min: 4994.408, max: 268662.810, cur: 4994.408)
+RegLoss
+	RegLoss          	 (min:    0.000, max:    0.000, cur:    0.000)
+log-SmoothL1Loss
+	log-SmoothL1Loss 	 (min:   -5.169, max:    1.420, cur:   -5.169)
+```
 
 **Back to [Quick Links](#quick-links)**
 
