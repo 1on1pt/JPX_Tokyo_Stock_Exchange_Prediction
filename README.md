@@ -184,6 +184,8 @@ The Neural Prophet model was chosen for its ability to expand on the ease of the
 
 The Prophet model was largely abandonded in favor of the more robust NeuralProphet model. The NeuralProphet model was downsized in scope to avoid the more involved AR Net, regreessor model. As a result, the parameters passed to the NeuralProphet model were reduced to just the number of epochs per training and the learning rate. For performance and time considerations, epochs were set to 50 isntead of the default 'automatic,' which tended to try 150-200 epochs by default. The learning rate was set to 1.0 to help accelerate fitting the modeel but also not over-fitting the model. Overall, the changes to the NeuralProphet model were minimal and mostly to improve performance and output. 
 
+In order to make the Stacked LSTM more efficient and reduce the computational time necessary, the number of epochs was reduced from 100 to 15.  Consistent testing of the model showed the loss and validation loss, the error evaluated during training a model and during validation, did not significantly change after fifteen epochs was reached.  For stocks with rapid changes in the fluctuation of price, a 150-epoch model did achieve minor improvement in prediction performance.  But given the wish to predict the performance of 2000 stocks, the majority of which had modest to lost changes in performance, the 15-epoch model performed well and cut computational time down dramatically from runs needing days to hours for completion.  
+
 ### Description of How Model has been Trained
 
 The NeuralProphet model was trained on all stock closing prices. The training also included trials with adding Japanese holidays to account for the trading closures, but the model ultimately picked up on them better without explicitly naming them in the training data. Additionally, training included looking for seeasonality trends at different aggregates: daily, weekly, and yearly. Ultimately, NeuralProphet sufficiently picked up on those trends independent of manually setting specific seasonality parameters or Fourier orders. 
@@ -197,6 +199,8 @@ NeuralProphet was then able to plot the different training forecasts against the
 NeuralProphet also generated seasonal trends and auto-regression trends from the training:
 
 ![](https://raw.githubusercontent.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/main/Images/NP_plot_components.png)
+
+The Stacked LSTM model was trained and tested on approximately four years of historical stock data.  Of the stock data provided, only the closing price values of the stocks were used.  Sixty-five percent of the data was used for training and thirty-five percent for testing.  A 65%-35% split of data was chosen because it achieved close training and testing root-mean-square-error (RMSE), which indicates that neither underfitting or overfitting is occurring.     
 
 ### Description of Current Accuracy Score
 
@@ -212,6 +216,10 @@ RegLoss
 log-SmoothL1Loss
 	log-SmoothL1Loss 	 (min:   -5.169, max:    1.420, cur:   -5.169)
 ```
+
+Given that a time-based series is being used to make predictions, the accuracy of the Stacked LSTM model can be determined by using the root-mean-square-error (RMSE) of the training versus testing data.  Additionally, the mean-absolute-deviation (MAE) of the training versus testing data also provides a way to determine how accurate the model is.  A screenshot of the code used to check the performance of the Stacked LSTM model on Tokyo Stock Exchange #7974 (Nintendo) is shown below.  The RMSE values of the train and test sets are 59,324 and 55,701, respectively, giving a ratio of 0.94.  A ratio of 1.00 would indicate a perfect model; hence, our ratio of 0.94, while not perfect, is a great one.  Furthermore, the MAE of our training and test sets are 58,766 and 55,259, respectively, once again giving a ratio of 0.94. 
+
+![part of python code root-mean-square-error and mean-absolute error of training and testing data](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/33e34c05ff7ce3d3643fbc8a24e6e381abd0f01c/Images/stacked_lstm_performance_tse7974.png)
 
 **Back to [Quick Links](#quick-links)**
 
