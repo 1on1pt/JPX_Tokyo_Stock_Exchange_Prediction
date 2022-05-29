@@ -200,7 +200,9 @@ NeuralProphet also generated seasonal trends and auto-regression trends from the
 
 ![](https://raw.githubusercontent.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/main/Images/NP_plot_components.png)
 
-The Stacked LSTM model was trained and tested on approximately four years of historical stock data.  Of the stock data provided, only the closing price values of the stocks were used.  Sixty-five percent of the data was used for training and thirty-five percent for testing.  A 65%-35% split of data was chosen because it achieved close training and testing root-mean-square-error (RMSE), which indicates that neither underfitting or overfitting is occurring.     
+The Stacked LSTM model was trained and tested on approximately four years of historical stock data.  Of the stock data provided, only the closing price values of the stocks were used.  Sixty-five percent of the data was used for training and thirty-five percent for testing.  A 65%-35% split of data was chosen because it achieved close training and testing root-mean-square-error (RMSE), which indicates that neither underfitting or overfitting is occurring.  The closing price versus trading day graph below shows an example of how the Stacked LSTM model trains and tests data.  The blue data show the actual closing stock price of TSE #6146 (Disco Corporation), while the orange data shows the training data and green data are the testing data.  Visual inspection shows the Stacked LSTM model does a good job modeling this stock.       
+
+![graphs showing modeling of TSE 6146](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/f5ccef48abfb1b77a59270275299fbfd06be1924/Images/stacked_lstm_train_test_tse6146.png)
 
 ### Description of Current Accuracy Score
 
