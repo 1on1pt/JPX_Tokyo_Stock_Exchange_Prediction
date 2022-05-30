@@ -291,7 +291,7 @@ The connection between the **financials_table** and the **prices_table** is the 
 
 ## Dashboard
 ### Storyboard on Google Slides
-![storyboard](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/8fb2baf324bb3ccac0757dc0224d3b8e64565a14/Images/Storyboard%20JPX.png)
+![storyboard](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/7bd00f302723e24051ea07448f9bb07fa3039c3d/Images/Updated_Storyboard.png)
 
 
 ### Description of the Tools That Will Be Used to Create the Final Dashboard
@@ -310,10 +310,13 @@ Two interactive dashboards will be created in Tableau:
 
 
 ### Images from Initial Analysis
-
+![Candlestick](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/7bd00f302723e24051ea07448f9bb07fa3039c3d/Images/Candlestick.png)
+![ForecastEarningsVsNetSales](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/7bd00f302723e24051ea07448f9bb07fa3039c3d/Images/NetSales_ForecastEarnings.png)
+![MaterialChangeVsPrice](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/7bd00f302723e24051ea07448f9bb07fa3039c3d/Images/MaterialChange_Price.png)
 
 ### Data (images or report) from the Machine Learning Task
-
+![LSTMPredictions](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/7bd00f302723e24051ea07448f9bb07fa3039c3d/Images/LSTM_Predictions.png)
+![NeuralProphetPredictions](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/7bd00f302723e24051ea07448f9bb07fa3039c3d/Images/Neural_Prophet_Predictions.png)
 
 ### At Least One Interactive Element
 
