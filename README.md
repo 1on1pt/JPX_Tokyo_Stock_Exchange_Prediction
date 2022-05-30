@@ -12,6 +12,7 @@
 * [Dashboard](#dashboard)
 * [Google Slides Presentation](https://docs.google.com/presentation/d/1edVy4hYBCBOtUxXZ-iFzxX-yDt1bUzcv-C_nE8Z_uqs/edit?usp=sharing)
 * [Tableau Public Dashboard](https://public.tableau.com/app/profile/nate.millmann/viz/TokyoStockDashboard/Dashboard1)
+* [Summary](#summary)
 
 
 ### Team Members
@@ -322,4 +323,17 @@ Two interactive dashboards will be created in Tableau:
 ![FilterImage](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/153ccb0b7895f74be6fad06357a2e9bef392a4df/Images/Filter_Screenshot.png)
 
 **Back to [Quick Links](#quick-links)**
+
+## Summary
+### Recommendations for Future Analysis
+1. Consider different machine learning models
+2. Consider various hybrid model combinations
+3. Pull *forecast earnings* into machine learning predictors for a more robust model
+4. Create dashboards through *Flask* for a different user interactive experience
+5. Convert Tokyo Stock Exhchange from *yens* to *US dollars*
+
+### What Would We Have Done Differently
+1. Consider a project with smaller datasets
+2. Consider NYSE datasets
+3. Consider connecting to the database sooner in the project
 
