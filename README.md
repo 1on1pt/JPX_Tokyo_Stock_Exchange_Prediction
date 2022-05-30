@@ -11,7 +11,7 @@
 * [Database](#database)
 * [Dashboard](#dashboard)
 * [Google Slides Presentation](https://docs.google.com/presentation/d/1edVy4hYBCBOtUxXZ-iFzxX-yDt1bUzcv-C_nE8Z_uqs/edit?usp=sharing)
-* [Tableau Public Dashboard]()
+* [Tableau Public Dashboard](https://public.tableau.com/app/profile/nate.millmann/viz/TokyoStockDashboard/Dashboard1)
 
 
 ### Team Members
