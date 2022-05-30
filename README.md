@@ -319,7 +319,7 @@ Two interactive dashboards will be created in Tableau:
 ![NeuralProphetPredictions](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/7bd00f302723e24051ea07448f9bb07fa3039c3d/Images/Neural_Prophet_Predictions.png)
 
 ### At Least One Interactive Element
-
+![FilterImage](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/153ccb0b7895f74be6fad06357a2e9bef392a4df/Images/Filter_Screenshot.png)
 
 **Back to [Quick Links](#quick-links)**
 
