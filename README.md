@@ -190,7 +190,7 @@ In order to make the Stacked LSTM more efficient and reduce the computational ti
 
 ### Description of How Model has been Trained
 
-The NeuralProphet model was trained on all stock closing prices. The training also included trials with adding Japanese holidays to account for the trading closures, but the model ultimately picked up on them better without explicitly naming them in the training data. Additionally, training included looking for seeasonality trends at different aggregates: daily, weekly, and yearly. Ultimately, NeuralProphet sufficiently picked up on those trends independent of manually setting specific seasonality parameters or Fourier orders. 
+The NeuralProphet model was trained on all stock closing prices. The training also included trials with adding Japanese holidays to account for the trading closures, but the model ultimately picked up on them better without explicitly naming them in the training data. Additionally, training included looking for seasonality trends at different aggregates: daily, weekly, and yearly. Ultimately, NeuralProphet sufficiently picked up on those trends independent of manually setting specific seasonality parameters or Fourier orders. 
 
 The model was trained to reduce loss factors, as shown below:
 ![](https://raw.githubusercontent.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/main/Images/NP_live_loss.png)
