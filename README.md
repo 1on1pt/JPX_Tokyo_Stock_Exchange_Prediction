@@ -196,6 +196,7 @@ The model was trained to reduce loss factors, as shown below:
 ![](https://raw.githubusercontent.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/main/Images/NP_live_loss.png)
 
 NeuralProphet was then able to plot the different training forecasts against the historical data to reduce loss and improve accuracy, as shown below:
+
 ![](https://raw.githubusercontent.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/main/Images/NP_training_plot.png)
 
 NeuralProphet also generated seasonal trends and auto-regression trends from the training:
