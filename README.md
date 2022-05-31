@@ -226,6 +226,14 @@ Given that a time-based series is being used to make predictions, the accuracy o
 
 ![part of python code root-mean-square-error and mean-absolute error of training and testing data](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/33e34c05ff7ce3d3643fbc8a24e6e381abd0f01c/Images/stacked_lstm_performance_tse7974.png)
 
+### Comparison of Machine Learning Model Performance
+A direct comparison between the Neural Prophet and Stacked LSTM models were performed.  Three TSE stocks performing in the top 20 of both models were trained and tested on the same set of data using a batch size of 56 days.  The table below shows the RMSE and MAE for both models on the training and testing sets of TSE 6146, TSE 6861 and TSE 7974.  In all cases, the Neural Prophet model has significantly less RMSE and MAE values than the Stacked LSTM.  In general, the RMSE values are 80% less for the Neural Prophet model.  Hence, the Neural Prophet model is better at modeling stock market data.  
+
+![rmse and mae for both models for three TSE stocks](https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/1baa8c60add5db1fdae36ff27bdec7359568ab8c/Images/model_comparison.png)
+
+In regard to how well each model fit the data, in general both were good at having training and testing RMSE and MAE values that were similar.  Meaning the models were not underfitting or overfitting the data.  However, the Stacked LSTM model was slightly better at achieving as good a model as possible, though with higher error values.  This can be seen with TSE 7974 where the Stacked LSTM has train and test values within 90% of one another, compared to the Neural Prophet values where the test RMSE is 3x the train RMSE.  Regardless of any overfitting, the error values for the Neural Prophet are significantly less and hence should lead to better predictions.  
+
+
 **Back to [Quick Links](#quick-links)**
 
 ## Database
