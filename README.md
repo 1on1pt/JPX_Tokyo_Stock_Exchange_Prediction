@@ -231,7 +231,7 @@ Given that a time-based series is being used to make predictions, the accuracy o
 ## Database
 
 ### Database Stores Static Data for Use During the Project
-The static data is the Japanese stock information for the years of 2017 thru 2021. That data was obtained and stored within a .csv file. The .csv files were uploaded into Postgres SQL tables via AWS after the data was cleaned.  Here are the two "clean" .csv files that will be used for this project:
+The static data is the Japanese stock information for the years of 2017 through 2021. That data was obtained and stored within a .csv file. The .csv files were uploaded into Postgres SQL tables via AWS after the data was cleaned.  Here are the two "clean" .csv files that will be used for this project:
 * https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/Resources/financials_clean.csv
 * https://github.com/1on1pt/JPX_Tokyo_Stock_Exchange_Prediction/blob/main/Resources/prices_clean.csv
 
